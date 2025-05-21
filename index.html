@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista 1 UTEC - Propuestas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bright-blue: #00b3ff;
+      --bright-green: #00cc88;
+      --black-gloss: #1a1a1a;
+      /*--bg: rgba(0, 13, 30, 0.92);  Color negro azulado metálico con transparencia */
+      --text: #fff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    /* Estilo para el fondo */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://reqlut2.s3.amazonaws.com/uploads/alumni/deead3a07a944ca941dedb93a4b6ea1afdd1e8cc-conecto-connecting-talent-with-opportunities.jpg'); /* Usamos un servicio de hosting de imágenes */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -2;
+    }
+    
+    /* Capa de color sobre el fondo para zonas sin imagen */
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--bg);
+      z-index: -1;
+    }
+    
+    body { 
+      font-family: 'Roboto', sans-serif; 
+      color: var(--text); 
+      scroll-behavior: smooth; 
+      position: relative;
+    }
+    
+    header {
+      background: linear-gradient(to right, var(--bright-green), var(--bright-blue));
+      color: white;
+      padding: 1rem;
+      position: relative;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    header h1 { font-size: 2rem; text-align: center; }
+    
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0.5rem 0;
+    }
+    
+    nav a {
+      color: white;
+      margin: 0.3rem 0.8rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover { color: var(--black-gloss); }
+    
+    .container { 
+      max-width: 1000px; 
+      margin: auto; 
+      padding: 2rem 1rem;
+      background-color: rgba(0, 10, 20, 0.75); /* Fondo semi-transparente para contenido */
+      border-radius: 8px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+    
+    section { margin-bottom: 2.5rem; }
+    
+    section h2 {
+      background: var(--bright-green);
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    details {
+      background: rgba(255, 255, 255, 0.9);
+      border: 2px solid var(--bright-blue);
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+    
+    summary {
+      padding: 1rem;
+      cursor: pointer;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f0fbff;
+      color: var(--bright-blue);
+    }
+    
+    summary::after {
+      content: '▼';
+      transition: transform 0.3s ease;
+    }
+    
+    details[open] summary::after { transform: rotate(180deg); }
+    
+    .content {
+      padding: 1rem;
+      line-height: 1.6;
+      background: #ffffff;
+      color: #333;
+    }
+    
+    .content ul, .content ol { margin-left: 1.5rem; margin-bottom: 0.5rem; }
+    
+    .buttons {
+      text-align: center;
+      margin: 3rem 0 1rem;
+    }
+    
+    .btn {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn-form { background: var(--bright-green); color: white; }
+    .btn-form:hover { background: #00aa77; }
+    
+    .btn-inst { background: var(--bright-blue); color: white; }
+    .btn-inst:hover { background: #0099cc; }
+    
+    footer {
+      background: var(--black-gloss);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      border-top: 2px solid var(--bright-blue);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lista 1 UTEC - Propuestas</h1>
+    <nav>
+      <a href="#repositorio">Repositorio</a>
+      <a href="#laptops">Laptops</a>
+      <a href="#mesas">Mesas</a>
+      <a href="#integra">Integra</a>
+      <a href="#culturales">Culturales</a>
+      <a href="#sustitutorio">Sustitutorio</a>
+      <a href="#organizaciones">Organizaciones</a>
+      <a href="#impacta">Impacta</a>
+      <a href="#electivos">Electivos</a>
+      <a href="#talleres-software">Talleres Software</a>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Cada sección con descripción literal del PDF irá aquí -->
+
+<section id="repositorio">
+  <h2>Repositorio Centralizado de Materiales Académicos</h2>
+  <details open>
+    <summary>Leer descripción completa</summary>
+    <div class="content">
+      <p>Crear un repositorio de materiales académicos por facultad. El acceso a materiales confiables y organizados es un desafío para los estudiantes. Muchos dependen de grupos de WhatsApp o archivos desactualizados, lo que genera una brecha en la preparación y desempeño. Esta propuesta plantea desarrollar una plataforma digital integrada (tipo Moodle o Drive institucional) donde todos los profesores suban teoría, ejercicios resueltos, grabaciones de explicaciones de temas complicados, y exámenes anteriores.</p>
+      <p>El contenido estará categorizado por facultades y cursos, incluyendo herramientas de búsqueda por palabras clave y opciones de descarga offline. Fases de implementación:</p>
+      <ol>
+        <li>Alianza con el área de TI para diseño de la plataforma.</li>
+        <li>Capacitación a docentes para uso correcto.</li>
+        <li>Promoción entre estudiantes con talleres y guías.</li>
+      </ol>
+      <p>Los beneficios incluyen:</p>
+      <ul>
+        <li>Repaso más eficiente con ejemplos y guías prácticas.</li>
+        <li>Acceso inmediato a contenido actualizado y de calidad.</li>
+        <li>Preparación adecuada para exámenes con material real.</li>
+        <li>Consistencia y transparencia en la enseñanza.</li>
+      </ul>
+      <p>Actores involucrados: profesores, directores de carrera, TI. Apoyo técnico puntual del área de TI. Inspiración en plataformas como Teaching & Learning Resource Repository (UND) y similares de universidades internacionales.</p>
+    </div>
+  </details>
+</section>
+
+<section id="laptops">
+  <h2>Servicio Técnico Gratuito para Laptops</h2>
+  <details>
+    <summary>Leer descripción completa</summary>
+    <div class="content">
+      <p>Muchos estudiantes enfrentan problemas técnicos con sus dispositivos sin poder acceder a un servicio confiable, rápido y económico. Esta propuesta plantea habilitar un área especializada dentro de UTEC para brindar soporte integral a laptops y dispositivos personales. Servicios como:</p>
+      <ul>
+        <li>Limpieza interna y externa de dispositivos.</li>
+        <li>Instalación de software educativo y de seguridad.</li>
+        <li>Eliminación de virus.</li>
+        <li>Diagnóstico de fallas físicas o de hardware.</li>
+        <li>Recomendaciones para mantenimiento preventivo.</li>
+      </ul>
+      <p>Los beneficios incluyen:</p>
+      <ul>
+        <li>Evitar interrupciones en el estudio por problemas técnicos.</li>
+        <li>Ahorro económico al ofrecer un servicio gratuito.</li>
+        <li>Experiencia práctica para alumnos de carreras afines que participen en el servicio.</li>
+        <li>Confianza y tranquilidad al contar con soporte dentro del campus.</li>
+      </ul>
+      <p>Este espacio también puede fomentar el aprendizaje aplicado a través de pasantías o voluntariados supervisados por TI, permitiendo a estudiantes de carreras afines obtener experiencia real mientras ayudan a sus compañeros.</p>
+      <p>El presupuesto estimado se enfocaría en la contratación de un técnico fijo y equipamiento básico. Inspirado en modelos como TechHelp de Kent State o el Hardware Service Center del MIT.</p>
+    </div>
+  </details>
+</section>
+
+<section id="mesas">
+  <h2>Zonas de Juego y Conexión: Mesas Multijuegos</h2>
+  <details>
+    <summary>Leer descripción completa</summary>
+    <div class="content">
+      <p>Propuesta para implementar mesas de cemento con tableros grabados de ajedrez, damas y otros juegos clásicos en los patios/jardines del campus. Estos espacios fomentan la recreación, la desconexión académica y la interacción entre carreras.</p>
+      <p>Además de los tableros fijos, se plantea ofrecer juegos portátiles (como Jenga, Uno, Catán, Ludo, etc.) disponibles en préstamo a través de Bienestar Estudiantil.</p>
+      <p>La propuesta también incluye la organización de torneos temáticos periódicos no competitivos que motiven la participación en un ambiente relajado y cultural.</p>
+      <p>Beneficios:</p>
+      <ul>
+        <li>Reducción del estrés académico.</li>
+        <li>Desarrollo de habilidades sociales y de pensamiento estratégico.</li>
+        <li>Generación de vínculos interfacultades.</li>
+        <li>Oportunidad para que los estudiantes de diseño industrial propongan modelos de mesas funcionales y estéticas.</li>
+      </ul>
+      <p>El presupuesto incluiría materiales para construcción, mantenimiento de juegos y difusión de actividades.</p>
+    </div>
+  </details>
+</section>
+    <!-- Ya hemos incluido \"Organizaciones\", ahora irán las demás -->
+
+<section id="integra">
+  <h2>Campeonatos Deportivos: Copa Integra UTEC</h2>
+  <details>
+    <summary>Leer descripción completa</summary>
+    <div class="content">
+      <p>La propuesta busca institucionalizar un campeonato deportivo semestral en disciplinas como fútbol, vóley y básquet, que se extienda a lo largo de 16 semanas. El formato incluirá fase de grupos y eliminación directa. La propuesta busca promover hábitos saludables, el trabajo en equipo y la identidad universitaria.</p>
+      <p>La participación será abierta para todos los estudiantes, con inscripción gratuita y árbitros designados por la universidad. Los partidos se realizarán en horarios convenientes para no interferir con las clases.</p>
+      <p>Premios: trofeos, medallas, giftcards, merchandising UTEC, licencias de software educativas.</p>
+      <p>Impacto:</p>
+      <ul>
+        <li>Mejora de salud física y mental.</li>
+        <li>Fortalece el sentido de pertenencia a UTEC.</li>
+        <li>Visibilidad institucional en redes y pantallas del campus.</li>
+        <li>Fomenta habilidades blandas como liderazgo, empatía y resiliencia.</li>
+      </ul>
+      <p>Presupuesto estimado: medallas (S/150), premios (S/300), organización y difusión (S/500).</p>
+    </div>
+  </details>
+</section>
+
+<section id="culturales">
+  <h2>Días Culturales "UTEC"</h2>
+  <details>
+    <summary>Leer descripción completa</summary>
+    <div class="content">
+      <p>Propuesta para realizar entre 2 a 3 días culturales por ciclo, con temáticas rotativas como: Costa, Sierra, Selva, Tradición, Tecnología, entre otros. Estas jornadas contarán con actividades como:</p>
+      <ul>
+        <li>Cortometrajes temáticos y debates.</li>
+        <li>Conciertos y presentaciones artísticas en vivo.</li>
+        <li>Feria gastronómica con platos regionales o internacionales.</li>
+        <li>Stands informativos y de expresión cultural.</li>
+      </ul>
+      <p>Objetivos:</p>
+      <ul>
+        <li>Fomentar el respeto y la inclusión cultural.</li>
+        <li>Visibilizar el talento artístico estudiantil.</li>
+        <li>Crear espacios de convivencia e intercambio.</li>
+        <li>Reducir el estrés académico y promover la salud mental.</li>
+      </ul>
+      <p>Se contará con el apoyo de organizaciones estudiantiles, artistas invitados, emprendimientos gastronómicos aliados y docentes interesados.</p>
+      <p>Presupuesto estimado: S/ 2000 – S/ 5000 según alcance y número de días. Se buscarán también alianzas con marcas o empresas externas.</p>
+    </div>
+  </details>
+</section>
+
+<section id="sustitutorio">
+  <h2>Examen Sustitutorio Obligatorio</h2>
+  <details>
+    <summary>Leer descripción completa</summary>
+    <div class="content">
+      <p>Propuesta para incorporar un mecanismo obligatorio de examen sustitutorio en casos donde un porcentaje significativo de estudiantes (≥75%) repruebe una evaluación con peso mayor al 25% del curso. Esta medida permitirá:</p>
+      <ul>
+        <li>Otorgar una segunda oportunidad de aprendizaje efectivo.</li>
+        <li>Evitar el rezago y la deserción por una sola mala evaluación.</li>
+        <li>Reducir la tasa de desaprobación sin bajar el nivel académico.</li>
+      </ul>
+      <p>El examen sustitutorio reemplazará la nota original, conservando el mismo peso porcentual en el promedio. Su activación será automática tras la revisión de resultados y la validación por la Dirección Académica.</p>
+      <p>Referencias normativas:</p>
+      <ul>
+        <li>Universidad del País Vasco (art. 49.2.e.5): nuevo examen por índice de suspensos anormalmente alto.</li>
+        <li>Universidad de Las Palmas (art. 7.4): repetir evaluación si el éxito es menor al 30%.</li>
+        <li>Universidad de Granada: medidas extraordinarias si más del 70% desaprueba.</li>
+        <li>Universidad Politécnica de Cartagena: procedimiento informativo y re-evaluación.</li>
+        <li>Universidad de Navarra: mecanismos compensatorios tras 75% de suspensos.</li>
+      </ul>
+      <p>Presupuesto: asignación de horas adicionales para docentes (2 horas por examen) y coordinación logística.</p>
+    </div>
+  </details>
+</section>
+
+<section id="organizaciones">
+  <h2>Sistema Integrado de Organizaciones Estudiantiles</h2>
+  <details>
+    <summary>Leer descripción completa</summary>
+    <div class="content">
+      <p>Esta propuesta busca fortalecer la comunicación y el impacto de las organizaciones estudiantiles mediante una segmentación clara por ejes de interés: deportivos, recreacionales, académicos, culturales y de impacto social. Cada categoría tendría un vocero oficial elegido democráticamente por los miembros de las organizaciones afines, quien actuaría como nexo ante la administración para gestionar recursos, espacios o apoyo logístico.</p>
+      <p>Además, se implementaría un sistema de regularización y reconocimiento donde, al final de cada semestre, los líderes (presidentes, secretarios, etc.) de cada organización presentarán un informe de actividades (ferias, talleres, eventos, etc.) avalado por evidencia (fotos, listas de asistencia, colaboraciones con entidades externas, etc.). Este informe permitirá validar las horas de voluntariado de los miembros de su organización, asegurando que su esfuerzo sea reconocido formalmente en sus registros académicos o en cartas de recomendación.</p>
+      <p>Reconocemos el esfuerzo y pasión que cada estudiante invierte en sus organizaciones. Este sistema no busca imponer cargas adicionales, sino valorar y visibilizar su trabajo, asegurando que nadie quede excluido, y atrayendo más alumnos que puedan validar sus horas de voluntariado aportando a las organizaciones estudiantiles de la universidad.</p>
+      <p>Este sistema garantizará que todas las organizaciones, sin importar su tamaño o temática, tengan acceso equitativo a oportunidades y recursos. Los voceros, al representar intereses colectivos, evitarán la duplicación de esfuerzos y promoverán alianzas entre grupos (ej: un club de programación colaborando con uno de robótica para un taller conjunto).</p>
+      <p>Para los miembros, el reconocimiento formal de sus horas incentivará la participación activa y les brindará herramientas valiosas para su currículum. Además, la transparencia en la gestión de informes semestrales fomentará la responsabilidad y profesionalismo en los líderes, mientras que UTEC podrá medir y destacar el impacto real de sus estudiantes en la comunidad.</p>
+      <p>Para asegurar un proceso justo, los informes semestrales serán evaluados por un comité como Bienestar Estudiantil con base en objetivos previamente establecidos (ej: mínimo tres actividades comprobadas por ciclo), y los miembros recibirán certificados de voluntariado y/o participación avalados por la universidad.</p>
+      <p><strong>Actores involucrados:</strong> Organizaciones Estudiantiles, Oficina de Sostenibilidad Universitaria, Bienestar Estudiantil, Departamentos Académicos.</p>
+      <p><strong>Apoyo necesario:</strong> Desarrollo de plataforma digital, capacitación para líderes de organizaciones.</p>
+    </div>
+  </details>
+</section>
+
+<section id="impacta">
+  <h2>Competencia Semestral "UTEC Impacta"</h2>
+  <details>
+    <summary>Leer descripción completa</summary>
+    <div class="content">
+      <p>Propuesta para implementar una competencia semestral gamificada que reconozca el impacto positivo de los estudiantes dentro y fuera de UTEC. Se utilizará un tablero digital público con actualizaciones semanales. Categorías:</p>
+      <ol>
+        <li>Reciclaje (por volumen entregado).</li>
+        <li>Voluntariado (horas comprobadas).</li>
+        <li>Excelencia académica (promedio alto).</li>
+        <li>Retos STEM (concursos internos o externos).</li>
+        <li>Deportes cachimbos.</li>
+        <li>Impacto comunitario (proyectos sociales).</li>
+        <li>Asistencia a charlas/talleres.</li>
+        <li>Redes sociales (viralización positiva).</li>
+        <li>Tutorías entre pares.</li>
+        <li>Bajas sanciones académicas.</li>
+        <li>Participación en talleres de salud mental.</li>
+        <li>Interacción con Alumni UTEC.</li>
+      </ol>
+      <p>Puntaje acumulativo por facultad o carrera. Los ganadores recibirán puntos bonus en la Semana Universitaria, sorteos de licencias, giftcards y merchandising institucional.</p>
+      <p>Inspirado en modelos como el sistema de House Points (Reino Unido) y competencias de universidades norteamericanas.</p>
+      <p>Actores involucrados: Bienestar Estudiantil, Departamentos Académicos, Oficina de Sostenibilidad, Comunicaciones, Comité Mixto.</p>
+    </div>
+  </details>
+</section>
+
+<section id="electivos">
+  <h2>Cursos Electivos Libres sobre Actividad Física</h2>
+  <details>
+    <summary>Leer descripción completa</summary>
+    <div class="content">
+      <p>La propuesta busca incluir una línea de cursos electivos opcionales centrados en salud física y bienestar integral. Las temáticas incluirán:</p>
+      <ul>
+        <li>Yoga, mindfulness y técnicas de relajación.</li>
+        <li>Fitness con tecnología: uso de wearables y apps.</li>
+        <li>Nutrición y hábitos saludables.</li>
+        <li>Prevención de lesiones y ergonomía académica.</li>
+        <li>Cultura física adaptada e inclusiva.</li>
+      </ul>
+      <p>Justificación:</p>
+      <ul>
+        <li>El estrés académico impacta el rendimiento y la salud mental.</li>
+        <li>El cuerpo y la mente deben cuidarse en paralelo.</li>
+        <li>La ciencia demuestra que el ejercicio mejora la cognición.</li>
+        <li>El uso de tecnología permite personalizar el bienestar.</li>
+      </ul>
+      <p>Inspirado en universidades como la de Tsukuba (Japón), MIT (EE.UU.), y UNMSM (Perú).</p>
+      <p>Los cursos serían dictados por docentes invitados, expertos en salud o entrenadores certificados. Contarán con evaluación basada en participación y reflexión.</p>
+    </div>
+  </details>
+</section>
+
+<section id="talleres-software">
+  <h2>Talleres de Software Especializado por Carrera</h2>
+  <details>
+    <summary>Leer descripción completa</summary>
+    <div class="content">
+      <p><strong>Funcionamiento:</strong> Cada semestre, las carreras programarán/ofrecerán taller(es) sobre software especializados clave de su área, por ejemplo SolidWorks, ANSYS, Aspen Plus, PLAXIS, etc. Se impartirán en los laboratorios de cómputo con licencias institucionales vigentes. Los estudiantes se inscribirán libremente al inicio del periodo y, tras tres inasistencias sin justificación, perderán su cupo a favor de una lista de espera. Las sesiones podrían ser quincenales, con una duración de 2–4 horas cada una (esto queda abierto a una mayor discusión, más técnica para identificar los requerimientos de forma detallada), y adicionalmente se podrían combinar las demostraciones guiadas con ejercicios aplicados a algunos de los casos reales de proyectos académicos o de organizaciones estudiantiles. Al finalizar, quienes completen todas las sesiones y superen un breve examen práctico recibirán una constancia de participación y participarán en un sorteo de licencias temporales del software correspondiente.</p>
+      
+      <p><strong>Beneficios:</strong> La oferta de estos talleres asegura que los alumnos adquieran competencias avanzadas en herramientas directamente empleadas en la industria y en sus proyectos de fin de carrera, evitando depender de tutoriales externos o versiones limitadas de software. Al aprovechar licencias corporativas de UTEC, se elimina la barrera económica que impide el acceso a programas costosos. Además, la práctica directa en casos reales refuerza la calidad técnica de los trabajos de investigación y fortalece la capacidad de las organizaciones estudiantiles para desarrollar prototipos y simulaciones de alto nivel.</p>
+      
+      <p><strong>Actores clave:</strong> La coordinación entre los Departamentos Académicos (para definir el software prioritario y asignar instructores), el Área de TI (para garantizar licencias y soporte en laboratorios), un Comité de Capacitación (para programar fechas y criterios de aprobación).</p>
+      
+      <p><strong>Costo aproximado:</strong> El presupuesto se basa principalmente en la asignación de licencias académicas algunas ya adquiridas por la universidad, honorarios eventuales de expertos externos cuando no existan instructores internos disponibles, y recursos de los talleres.</p>
+    </div>
+  </details>
+</section>
+  </div>
+  <div class="buttons">
+    <a class="btn btn-form" href="https://forms.gle/EsRGthpyyHAKVuvE9" target="_blank">Formulario de Ideas</a>
+    <a class="btn btn-inst" href="https://www.instagram.com/lista_1_utec_represtudiantil" target="_blank">Instagram</a>
+  </div>
+  <footer>
+    <p>© 2025 Lista 1 UTEC - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
